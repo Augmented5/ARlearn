@@ -25,6 +25,9 @@ public class changesettopbox : MonoBehaviour {
 	public GameObject tv ;
 	public GameObject stb ;
 	public GameObject tvfurniture ;
+	public GameObject smalltv ;
+	public GameObject girl ;
+	public GameObject smallfurniture ;
 	void Awake () {
 		btn = nextButton.GetComponent<Button>();
 		btn1 = previousButton.GetComponent<Button>();
@@ -46,6 +49,14 @@ public class changesettopbox : MonoBehaviour {
 	    tv = Instantiate(Resources.Load("TV", typeof(GameObject))) as GameObject;
 	    stb = Instantiate(Resources.Load("Tuner", typeof(GameObject))) as GameObject;
 		tvfurniture = Instantiate(Resources.Load("TVfurniture", typeof(GameObject))) as GameObject;
+		girl= Instantiate(Resources.Load("girl", typeof(GameObject))) as GameObject;
+		smallfurniture= Instantiate(Resources.Load("TVfurniture", typeof(GameObject))) as GameObject;
+		smalltv= Instantiate(Resources.Load("TV", typeof(GameObject))) as GameObject;
+	}
+	public void ChangeScene (string a)
+	{
+		 count=0;
+		Application.LoadLevel (a);
 	}
 	public void On_NextClick_Button () {
 		count++;
@@ -108,6 +119,23 @@ public class changesettopbox : MonoBehaviour {
 					 stb.SetActive(false);
 					 tv.SetActive (true); 
 					 tvfurniture.SetActive(true);
+					 break;
+				    }
+			case 5: {
+				     anime1.Stop();
+					 anime2.Stop();
+					 anime4.Stop();
+					 anime3.Stop();
+					 coax.SetActive (false);         // setting models disable in last task
+					 hdmi.SetActive (false); 
+					 power.SetActive (false);
+					 rca.SetActive (false); 
+					 stb.SetActive(false);
+					 tv.SetActive (false); 
+					 tvfurniture.SetActive(false);
+					 girl.SetActive(true);
+					 smalltv.SetActive (true); 
+					 smallfurniture.SetActive(true);
 					 break;
 				    }
 		}
@@ -177,6 +205,23 @@ public class changesettopbox : MonoBehaviour {
 					 anime2.Stop();
 					 anime4.Stop();
 					 anime3.Stop();
+					 tv.SetActive (true); 
+					 tvfurniture.SetActive(true);
+					 girl.SetActive(false);
+					 smalltv.SetActive (false); 
+					 smallfurniture.SetActive(false);
+					 break;
+			        }
+			case 5: {
+				     anime1.Stop();
+					 anime2.Stop();
+					 anime4.Stop();
+					 anime3.Stop();
+					 tv.SetActive (false); 
+					 tvfurniture.SetActive(false);
+					 girl.SetActive(true);
+					 smalltv.SetActive (true); 
+					 smallfurniture.SetActive(true);
 					 break;
 				    }
 		}

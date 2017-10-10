@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class change : MonoBehaviour {
 
@@ -21,10 +22,13 @@ public class change : MonoBehaviour {
 	public GameObject dsl ;
 	public GameObject power ;
 	public GameObject computer ;
+	public GameObject lego ;
+	public GameObject model;
+	public GameObject stb;
 	void Awake () {
 		btn = nextButton.GetComponent<Button>();
 		btn1 = previousButton.GetComponent<Button>();
-		s1=Resources.LoadAll<Sprite>("RouterAllSteps");
+		s1=Resources.LoadAll<Sprite>("RouterAllSteps 1");
 		anime0 = GetComponent<Animation>();
 		anime0.Stop();
 		anime1 = GetComponent<Animation>();
@@ -36,18 +40,27 @@ public class change : MonoBehaviour {
 		ethernet = Instantiate(Resources.Load("ethernet_assem(Step_ap214)", typeof(GameObject))) as GameObject;
 		power = Instantiate(Resources.Load("Power", typeof(GameObject))) as GameObject;
 		dsl = Instantiate(Resources.Load("2377477_2213145-2", typeof(GameObject))) as GameObject;
+		model=Instantiate(Resources.Load("model", typeof(GameObject))) as GameObject;
 		computer=Instantiate(Resources.Load("computer", typeof(GameObject))) as GameObject;
+		lego=Instantiate(Resources.Load("lego", typeof(GameObject))) as GameObject;
+		stb=Instantiate(Resources.Load("SmallSTB", typeof(GameObject))) as GameObject;
+	}
+	public void ChangeScene (string a)
+	{
+		count=0;
+		Application.LoadLevel (a);
 	}
 	public void On_NextClick_Button () {
 		count++;
 		if(count>= s1.Length-1)
 		{
-			btn.interactable  = false;
+			btn.interactable  = false;    //next button 
 		}
 		if(count>=1)       // function written, as wen i diabled button on above condition and again use prev button and again coming to next then it should enable back the button
 		{
 			btn1.interactable  = true;
 		}
+		
 		i1.sprite=s1[count];
 		
 		switch(count)
@@ -92,6 +105,16 @@ public class change : MonoBehaviour {
 					 anime4.Stop();
 					 ethernet.SetActive (false);
 					 computer.SetActive (true); 
+					 break;
+				    }
+			case 5: {
+				     anime1.Stop();
+					 anime2.Stop();
+					 anime4.Stop();
+					 computer.SetActive (false); 
+					 model.SetActive(false);
+					 lego.SetActive(true);
+					 stb.SetActive(true);					
 					 break;
 				    }
 		}
@@ -155,6 +178,21 @@ public class change : MonoBehaviour {
 					 anime4.Stop();
 					 ethernet.SetActive (false);
 					 computer.SetActive (true); 
+					 model.SetActive(true);
+					 lego.SetActive(false);
+					  stb.SetActive(false);
+					
+					 break;
+				    }
+			case 5: {
+				     anime1.Stop();
+					 anime2.Stop();
+					 anime4.Stop();
+					 model.SetActive(false);
+					 computer.SetActive (false); 
+					 lego.SetActive(true);
+					  stb.SetActive(true);
+					
 					 break;
 				    }
 		}

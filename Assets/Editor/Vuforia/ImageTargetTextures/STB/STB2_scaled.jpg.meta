@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5d8a33bc9ca464280d9b29137d89556
+guid: 9e0530a79bef4f1b8e4fc4975974378b
 TextureImporter:
   fileIDToRecycleName:
     8900000: generatedCubemap
@@ -30,7 +30,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: -1
+    aniso: 8
     mipBias: -1
     wrapU: -1
     wrapV: -1

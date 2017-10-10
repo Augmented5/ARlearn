@@ -24,6 +24,8 @@ public class changeont : MonoBehaviour {
 	public GameObject ont ;
 	public GameObject bluehouse ;
 	public GameObject redhouse ;
+	public GameObject lego ;
+	public GameObject modem;
 	void Awake () {
 		btn = nextButton.GetComponent<Button>();
 		btn1 = previousButton.GetComponent<Button>();
@@ -45,6 +47,14 @@ public class changeont : MonoBehaviour {
 	    ont = Instantiate(Resources.Load("Ont", typeof(GameObject))) as GameObject;
 	    bluehouse = Instantiate(Resources.Load("bluehouse", typeof(GameObject))) as GameObject;
 		redhouse = Instantiate(Resources.Load("redhouse", typeof(GameObject))) as GameObject;
+		lego=Instantiate(Resources.Load("lego", typeof(GameObject))) as GameObject;
+		modem=Instantiate(Resources.Load("Modem", typeof(GameObject))) as GameObject;
+	}
+	public void ChangeScene (string a)
+	{ 
+	    count=0;
+		Application.LoadLevel (a);
+		
 	}
 	public void On_NextClick_Button () {
 		Debug.Log("pressed");
@@ -112,7 +122,21 @@ public class changeont : MonoBehaviour {
 					 anime3.Stop();
 					 anime4.Play();
 					 break;
-				    }
+					   }
+			case 5: {
+					 ont.SetActive(false);
+					 coax.SetActive (false); 
+					 power.SetActive (false);
+				     battery.SetActive (false);
+					 optical.SetActive(false);
+					 lego.SetActive(true);
+					 modem.SetActive(true);
+				     anime1.Stop();
+					 anime2.Stop();
+					 anime3.Stop();
+					 anime4.Play();
+					 break;
+					  }
 		}
 	}
 	public void On_PrevClick_Button () {
@@ -190,12 +214,28 @@ public class changeont : MonoBehaviour {
 					 power.SetActive (true);
 				     battery.SetActive (true);
 					 optical.SetActive(true);
+					 lego.SetActive(false);
+					 modem.SetActive(false);
 				     anime1.Stop();
 					 anime2.Stop();
 					 anime3.Stop();
 					 anime4.Play();
 					 break;
 				    }
+			case 5: {
+					 ont.SetActive(false);
+					 coax.SetActive (false); 
+					 power.SetActive (false);
+				     battery.SetActive (false);
+					 optical.SetActive(false);
+					 lego.SetActive(true);
+					 modem.SetActive(true);
+				     anime1.Stop();
+					 anime2.Stop();
+					 anime3.Stop();
+					 anime4.Play();
+					 break;
+							    }
 		}
 	}
 	

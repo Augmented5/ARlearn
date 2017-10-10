@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 53ddedbf0f5df6f458b3904bda4bca62
-timeCreated: 1507280737
+guid: 30ca14f7e35e59d428364d728e143a15
+timeCreated: 1507636336
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,7 @@ TextureImporter:
     21300004: ontAllSteps_2
     21300006: ontAllSteps_3
     21300008: ontAllSteps_4
+    21300010: ontAllSteps_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -45,7 +46,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 10
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -107,9 +108,9 @@ TextureImporter:
       name: ontAllSteps_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 384
-        width: 256
+        x: 34
+        y: 385
+        width: 254
         height: 303
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -121,9 +122,9 @@ TextureImporter:
       name: ontAllSteps_1
       rect:
         serializedVersion: 2
-        x: 347
-        y: 386
-        width: 256
+        x: 345
+        y: 385
+        width: 254
         height: 302
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -136,9 +137,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 655
-        y: 388
-        width: 260
-        height: 300
+        y: 382
+        width: 259
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,13 +150,13 @@ TextureImporter:
       name: ontAllSteps_3
       rect:
         serializedVersion: 2
-        x: 29
-        y: 35
-        width: 259
-        height: 297
+        x: 18
+        y: 28
+        width: 261
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 1, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -163,8 +164,22 @@ TextureImporter:
       name: ontAllSteps_4
       rect:
         serializedVersion: 2
-        x: 345
-        y: 34
+        x: 343
+        y: 27
+        width: 258
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ontAllSteps_5
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 29
         width: 258
         height: 298
       alignment: 0
