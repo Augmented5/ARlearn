@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class changeont : MonoBehaviour {
 
@@ -53,7 +54,7 @@ public class changeont : MonoBehaviour {
 	public void ChangeScene (string a)
 	{ 
 	    count=0;
-		Application.LoadLevel (a);
+		SceneManager.LoadSceneAsync(a);
 		
 	}
 	public void On_NextClick_Button () {

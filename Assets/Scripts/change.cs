@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
+using UnityEngine.SceneManagement;
 public class change : MonoBehaviour {
 
 	public Sprite[] s1;
@@ -48,8 +48,8 @@ public class change : MonoBehaviour {
 	public void ChangeScene (string a)
 	{
 		count=0;
-		Application.LoadLevel (a);
-	}
+		SceneManager.LoadSceneAsync(a);
+    }
 	public void On_NextClick_Button () {
 		count++;
 		if(count>= s1.Length-1)
@@ -197,5 +197,7 @@ public class change : MonoBehaviour {
 				    }
 		}
 	}
+	
+	
 	
 }
