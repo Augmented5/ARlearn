@@ -178,3 +178,5 @@ d2a2bd333db22f480a8589e167314ecc Assembly-CSharp.dll:Vuforia.UserDefinedTargetBu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ApplicationManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeColor
 7cac06ac0eaa7257b831c29e4455ce1b Assembly-CSharp.dll:Vuforia.VuforiaConfiguration
+41e98b3c4d6f4d08ddd3b598ccf3a842 Assembly-CSharp.dll:.RPRLoading
+cc489b69cb625fe492e5ed596662f7df Assembly-CSharp.dll:.Loading123

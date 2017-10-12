@@ -19,9 +19,11 @@ public class LoadSceneOnClick : MonoBehaviour {
 		loadingscreen.SetActive(true);
 		while(!operation.isDone)
 		{
-			float progress =Mathf.Clamp01(operation.progress/ .9f);
+			float progress =Mathf.Clamp01(operation.progress/.9f);
 			slider.value=progress;
-			progressText.text=progress * 100f + "%";
+			progressText.text= Mathf.RoundToInt(progress * 100f) + "%";
+			Debug.Log("a  "+ progressText.text);
+			
 			yield return null;
 		}
 	}
