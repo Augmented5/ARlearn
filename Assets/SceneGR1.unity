@@ -883,11 +883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa0bc1696d45e24097ab2f247856d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scalingSpeed: 0.03
-  rotationSpeed: 70
-  translationSpeed: 5
-  resourceName: Tasks
-  backgrounds: []
 --- !u!4 &671709407
 Transform:
   m_ObjectHideFlags: 0
@@ -2754,6 +2749,6 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 8d9f9d95743557640a2874983cd34f22, type: 2}
   m_Animations: []
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0

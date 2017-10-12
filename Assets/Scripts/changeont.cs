@@ -94,7 +94,7 @@ public class changeont : MonoBehaviour {
 					 }
 			case 2: {
 				     ont.SetActive(true);
-					 coax.SetActive (true); 
+					 coax.SetActive (false); 
 					 power.SetActive (true);
 					 anime1.Stop();
 					 anime3.Stop();
@@ -104,8 +104,8 @@ public class changeont : MonoBehaviour {
 					}
 			case 3: {
 					 ont.SetActive(true);
-					 coax.SetActive (true); 
-					 power.SetActive (true);
+					 coax.SetActive (false); 
+					 power.SetActive (false);
 				     battery.SetActive (true);
 				     anime1.Stop();
 					 anime2.Stop();
@@ -114,9 +114,9 @@ public class changeont : MonoBehaviour {
 					}
 			case 4: {
 					 ont.SetActive(true);
-					 coax.SetActive (true); 
-					 power.SetActive (true);
-				     battery.SetActive (true);
+					 coax.SetActive (false); 
+					 power.SetActive (false);
+				     battery.SetActive (false);
 					 optical.SetActive(true);
 				     anime1.Stop();
 					 anime2.Stop();
@@ -187,7 +187,7 @@ public class changeont : MonoBehaviour {
 					 }
 			case 2: {
 					 ont.SetActive(true);
-					 coax.SetActive (true); 
+					 coax.SetActive (false); 
 					 power.SetActive (true);
 					 battery.SetActive (false);
 					 optical.SetActive (false);
@@ -199,8 +199,8 @@ public class changeont : MonoBehaviour {
 					}
 			case 3: {
 				     ont.SetActive(true);
-					 coax.SetActive (true); 
-					 power.SetActive (true);
+					 coax.SetActive (false); 
+					 power.SetActive (false);
 				     battery.SetActive (true);
 					 optical.SetActive(false);
 					 anime1.Stop();
@@ -211,9 +211,9 @@ public class changeont : MonoBehaviour {
 					}
 			case 4: {
 				     ont.SetActive(true);
-					 coax.SetActive (true); 
-					 power.SetActive (true);
-				     battery.SetActive (true);
+					 coax.SetActive (false); 
+					 power.SetActive (false);
+				     battery.SetActive (false);
 					 optical.SetActive(true);
 					 lego.SetActive(false);
 					 modem.SetActive(false);
